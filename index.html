@@ -7,54 +7,43 @@
 </head>
 <body>
 <div class="wrapper">
-    <div class="content">
-        <div id="content-slide-1">
-            <div id="content-slide-2">
-                <div id="content-slide-3">
-                    <div id="content-slide-4">
-                        <div id="content-slide">
-                            <div id="content-inner">
-                                <div class="page" id="page1">
-                                    <img src="img/slide1.jpg" alt="1" title="slide">
-                                    <div class="page-info" id="info1">
-                                        <h2>Lavender</h2>
-                                    </div>
-                                </div>
-                                <div class="page" id="page2">
-                                    <img src="img/slide2.jpg" alt="2" title="slide">
-                                    <div class="page-info" id="info2">
-                                        <h2>Neon light</h2>
-                                    </div>
-                                </div>
-                                <div class="page" id="page3">
-                                    <img src="img/slide3.jpg" alt="3" title="slide">
-                                    <div class="page-info" id="info3">
-                                        <h2>Per aspera ad astra</h2>
-                                    </div>
-                                </div>
-                                <div class="page" id="page4">
-                                    <img src="img/slide4.jpg" alt="4" title="slide">
-                                    <div class="page-info" id="info4">
-                                        <h2>Universe</h2>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <input type="radio" name="point" id="slider1" checked>
+    <input type="radio" name="point" id="slider2">
+    <input type="radio" name="point" id="slider3">
+    <input type="radio" name="point" id="slider4">
+    <div class="slider">
+        <img src="img/slide1.jpg" class="slides" alt="slider">
+        <img src="img/slide2.jpg" class="slides" alt="slider">
+        <img src="img/slide3.jpg" class="slides" alt="slider">
+        <img src="img/slide4.jpg" class="slides" alt="slider">
+    </div>
+    <div class="text-controls">
+        <div class="text">
+            <div class="text-include">text-slider1</div>
+            <div class="text-include">text-slider1</div>
+            <div class="text-include">text-slider1</div>
+            <div class="text-include">text-slider1</div>
+        </div>
+        <div class="controls">
+            <label for="slider1" id="point1">
+                <span class="radio-elem"></span>
+            </label>
+            <label for="slider2" id="point2">
+                <span class="radio-elem"></span>
+            </label>
+            <label for="slider3" id="point3">
+                <span class="radio-elem"></span>
+            </label>
+            <label for="slider4" id="point4">
+                <span class="radio-elem"></span>
+            </label>
         </div>
     </div>
 
+
 </div>
 
-<ul id="nav">
-    <li class="button" id="button1"><a href="#content-slide-1"></a></li>
-    <li class="button" id="button2"><a href="#content-slide-2"></a></li>
-    <li class="button" id="button3"><a href="#content-slide-3"></a></li>
-    <li class="button" id="button4"><a href="#content-slide-4"></a></li>
-</ul>
-</div>
+
+
 </body>
 </html>
