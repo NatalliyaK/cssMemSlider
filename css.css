@@ -36,11 +36,10 @@ input {
     width: 25px;
     border-radius: 50%;
     background: blue;
-
 }
 
 .wrapper label:hover {
-    border: solid 2px blue;
+    border: solid 2px #e5f5ea;
     background: #e5f5ea;
 }
 
@@ -68,12 +67,15 @@ input {
 #slider1:checked ~ .slider img {
     transform: translateX(0);
 }
+
 #slider2:checked ~ .slider img {
     transform: translateX(-100%);
 }
+
 #slider3:checked ~ .slider img {
     transform: translateX(-200%);
 }
+
 #slider4:checked ~ .slider img {
     transform: translateX(-300%);
 }
@@ -108,4 +110,16 @@ input {
         z-index: 2;
         transform: translateX(0);
     }
+}
+
+@media (max-width: 720px) {
+    .text-controls {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .controls {
+        justify-content: center;
+    }
+
 }
