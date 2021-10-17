@@ -7,8 +7,8 @@ body {
 }
 
 .wrapper {
-    margin: 100px auto 0;
-    max-width: 960px;
+    margin: 6.25rem auto 0;
+    max-width: 60rem;
 }
 
 .slider {
@@ -19,11 +19,14 @@ body {
     border-radius: 2vw;
 }
 
+img {
+    transition: ease-out 0.5s;
+}
+
 .text {
     display: flex;
     align-items: center;
 }
-
 
 input {
     display: none;
@@ -31,20 +34,25 @@ input {
 
 .wrapper label {
     cursor: pointer;
-    height: 25px;
-    margin: 25px 12px 0 16px;
-    width: 25px;
+    height: 1.5625rem;
+    margin: 1.5625rem 0.75rem 0 1rem;
+    width: 1.5625rem;
     border-radius: 50%;
     background: blue;
 }
 
-.wrapper label:hover {
-    border: solid 2px #e5f5ea;
-    background: #e5f5ea;
+.wrapper label::after {
+    content: '';
+    display: block;
+    height: 1.5625rem;
+    width: 1.5625rem;
+    padding-bottom: 1.875rem;
 }
 
-.wrapper label:checked {
 
+.wrapper label:hover {
+    border: solid 0.125rem #e5f5ea;
+    background: #e5f5ea;
 }
 
 .controls {
@@ -58,6 +66,7 @@ input {
 .text-controls {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .slides {
@@ -84,11 +93,19 @@ input {
     display: flex;
     position: relative;
     align-items: end;
+    width: 50%;
 }
 
 .text-include {
     display: none;
     width: 50vw;
+}
+
+#slider1:checked ~ .text-controls #point1,
+#slider2:checked ~ .text-controls #point2,
+#slider3:checked ~ .text-controls #point3,
+#slider4:checked ~ .text-controls #point4 {
+    background-color: #e5f5ea;
 }
 
 #slider1:checked ~ .text-controls .text .text-include:nth-child(1),
